@@ -73,7 +73,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.center-glow {
+.top-center-glow {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -87,7 +87,7 @@ body {
     z-index: 2;
 }
 
-.bottom-glow {
+.top-bottom-glow {
     height: 20%;
     width: 100%;
     position: absolute;
@@ -121,6 +121,7 @@ body {
 
 .top-right-part {
     z-index: 1;
+    margin-right: 5%;
 }
 
 .top-center-part img {
@@ -167,6 +168,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    position: relative;
+}
+
+.bottom-left-part {
+    z-index: 1;
+    margin-left: 100px;
 }
 
 .bottom-right-part {
@@ -175,6 +182,7 @@ body {
     justify-content: space-around;
     align-content: center;
     margin-top: 45px;
+    z-index: 1;
 }
 
 .bottom-header {
@@ -200,7 +208,6 @@ body {
 
 .table th {
     padding: 5px 15px;
-    border-spacing: 15px;
     color: #671D00;
     border: none;
 }
@@ -216,6 +223,7 @@ body {
 
 .table td:first-child {
     width: 65px;
+
 }
 
 .table td:nth-last-child(-n+2) {
@@ -256,4 +264,28 @@ body {
     color: black;
     font-size: 16px;
     border-radius: 7px;
+}
+
+.bottom-center-glow {
+    width: 820px;
+    height: 820px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    background-image: url(/assets/images/bottom/ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120%;
+    border-radius: 90%;
+}
+
+.bottom-bottom-glow {
+    height: 17%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url(/assets/images/bottom/glow_4.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    filter: saturate(1.5);
 }
